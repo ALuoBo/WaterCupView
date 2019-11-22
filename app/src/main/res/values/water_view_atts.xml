@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WaterCupView" >
+    <attr name="fillColor" format="color" />
+    <attr name="range" format="float" />
+    <attr name="width" format="float" />
+    <attr name="level" format="float" />
+    </declare-styleable>
+</resources>
