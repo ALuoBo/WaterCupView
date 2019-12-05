@@ -8,7 +8,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
-import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
@@ -98,7 +97,8 @@ public class WaterCupView extends View {
         path.moveTo(startPoint - 1000, 700);
         for (int i = -waterWidth; i < viewWidth + waterWidth; i = i + waterWidth) {
             path.rCubicTo(waterWidth / 2, 100, waterWidth / 2, -100, waterWidth, 0);
-        }shadowPath.moveTo(startPoint , 700);
+        }
+        shadowPath.moveTo(startPoint, 700);
         for (int i = -waterWidth; i < viewWidth + waterWidth; i = i + waterWidth) {
             shadowPath.rCubicTo(waterWidth / 2, 100, waterWidth / 2, -100, waterWidth, 0);
         }
